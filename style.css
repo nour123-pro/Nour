@@ -18,6 +18,7 @@
     box-sizing: border-box;
     font-family: 'Brown Sugar';
     color: #fff;
+   
 }
 
 html, body {
@@ -1027,6 +1028,7 @@ footer ul li a:hover {
 }
 
 /* Styling for the loading h1 */
+/* Styling for the loading h1 */
 .loading-screen h1 {
     color: #484848;
     font-size: 50px;
@@ -1034,11 +1036,11 @@ footer ul li a:hover {
     font-family: 'Brown Sugar';
     letter-spacing: 7px;
     cursor: pointer;
-    transition: .5s linear;
+    transition: 0.5s linear;
 }
 
 .loading-screen h1 span {
-    transition: .5s linear;
+    transition: 0.5s linear;
 }
 
 .loading-screen h1:hover span:nth-child(1) {
@@ -1058,7 +1060,7 @@ footer ul li a:hover {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 
-/* Loading screen animation */
+/* Loading screen styling */
 .loading-screen {
     position: fixed;
     top: 0;
@@ -1076,8 +1078,13 @@ footer ul li a:hover {
 
 /* Real website content will be initially hidden */
 .real-website {
-    display: none;
-    transition: display 0.5s;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-out;
+    margin: 0;
+  padding: 0;
+  background-color: black;
+  width: 100%;
+    height: 100%;
 }
 
 /* Hide the loading screen after mouse hover and 2 seconds delay */
@@ -1086,11 +1093,13 @@ footer ul li a:hover {
     pointer-events: none;
 }
 
-/* Optional: animation to fade the content in */
+/* Show the real website content after loading screen hides */
 .real-website.visible {
-    display: block;
     opacity: 1;
+    
+    
 }
+
 
 
 
