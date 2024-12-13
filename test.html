@@ -1,0 +1,36 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+  
+    body {
+      background-color: #ffb7b0;
+      min-height: 70vh;
+      padding: 40vh 30vw;
+      color: hsl(198, 1%, 29%);
+      font-family: 'Gochi Hand', cursive;
+      text-align: left;
+      font-size: 130%;  
+    }
+  
+    h2 {
+      line-height: 1.5;
+      display: inline;
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+      color: transparent;  /* Make text color transparent so the background is visible */
+      background: #DAE2F8;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;  /* For Chrome/Safari to apply background to text */
+      background-clip: text;  /* For other modern browsers */
+    }
+  
+    @keyframes animatedBackground {
+      to {
+        background-size: 100% 100%;
+      }
+    }
+  </style>
+  
+  <h2>This is a multi-line spanning animated underline. This took an annoyingly long time to figure out.</h2>
+  

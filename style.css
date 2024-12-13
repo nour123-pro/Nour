@@ -1,0 +1,1223 @@
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+@font-face {
+    font-family: 'Sarasvati';
+    src: url('Sarasvati-9Y4w5.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brown Sugar';
+    src: url('Brown-Sugar/Brown\ Sugar\ .ttf') format('truetype');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brown Sugar';
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#purple{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #EDBFFF;
+    opacity: 0;
+    display: none;
+    transition: opacity ease 1s;
+    
+}
+.cursor{
+    height: 120px;
+    width: 160px;
+    border-radius: 50%;
+    position: fixed;
+    
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size:cover ;
+    mix-blend-mode: difference;
+    background-image: url("view-3d-cartoon-animated-coffee-cup.png");
+
+}
+.main{
+    background-color: #0F0D0D;
+    background-color: black;
+    cursor: none;
+}
+
+
+
+
+
+
+
+
+#nav {
+    height: 5vw;  /* Adjust the height based on viewport width */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;  /* Adjust the padding based on viewport width */
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+}
+
+#nav img {
+    height: 3vw;  /* Adjust the height based on viewport width */
+    background-color: #dadada;
+    border-radius: 3.2vw;  /* Adjust the border-radius based on viewport width */
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;  /* Adjust the gap based on viewport width */
+}
+
+#nav #circle {
+    height: 1.8vw;  /* Adjust the circle size based on viewport width */
+    width: 1.8vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#nav h4 {
+    font-size: 2.5vw;  /* Adjust the font size based on viewport width */
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#nav h4:nth-child(1) {
+    border-bottom: 0.1vw solid #fff;  /* Adjust the border size based on viewport width */
+}
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;  /* Using vw for top padding */
+}
+
+.page1 h1 {
+    font-size: 8vw;  /* Scales the font size based on the viewport width */
+    font-weight: 300;
+    font-family: 'PP Mori', sans-serif;
+    margin-left: 2vw;
+    transform-origin: left;
+}
+
+.page1 h2 {
+    font-size: 3vw;  /* Scales the font size based on the viewport width */
+    font-weight: 100;
+    transform-origin: left;
+    margin-left: 20vw;  /* Adjusted margin-left based on viewport width */
+}
+
+.page1 video {
+    width: 80vw;  /* Scales the width based on viewport width */
+    margin-top: 10vw;  /* Margin-top adjusted based on viewport width */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);  /* Centers the video horizontally */
+    border-radius: 2vw;  /* Scales border-radius with viewport width */
+    height: auto;  /* Maintain aspect ratio */
+    max-height: 50vw;  /* Prevent video from getting too large */
+}
+
+
+
+
+
+
+
+
+.page2 {
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index: 9;
+}
+
+.page2 h1 {
+    font-size: 7vw; /* Keep using vw for font sizing */
+    font-weight: 500;
+    color: #111;
+}
+
+.page2-container {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust this if needed */
+}
+
+.page2-left, .page2-right {
+    width: 48%; /* Adjusted to make sure there's enough space for both elements */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.page2-left h2 {
+    font-size: 4vw; /* Adjust the font size to scale better */
+    font-weight: 300;
+    color: #111;
+    line-height: 1.2; /* Adjusted for better text spacing */
+}
+
+.page2-right p {
+    font-size: 2.5vw; /* Adjusted for better readability on smaller screens */
+    color: #111;
+}
+
+.page2-right button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    background-color: #EDBFFF;
+    color: #111;
+    margin-top: 20px;
+    font-size: 1.5vw; /* Adjust button text size for responsiveness */
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+    font-size: 12px;
+}
+
+.page3 h1{
+    font-size: 6.8vw;
+    font-weight: 300;
+    color: #111;
+    margin-left: 100px;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.page3-part1 img{
+    height: 400px;
+    margin-top: 160px;
+}
+.page3-part1 video{
+    height: 400px;
+    margin-top: 40px;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 170px 100px;
+}
+.elem{
+    /* background-color: salmon; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    margin: 2rem;
+    
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 5%;
+}
+.text-div{
+    height: 16vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+}
+
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+
+}
+
+
+
+footer {
+    background-color: #EDBFFF;  /* Background color for the footer */
+    color: white;  /* White text for readability */
+    padding: 30px 0;  /* Increase padding to give more space */
+    text-align: center;  /* Center the text */
+    font-family: Arial, sans-serif;  /* Use a clean, modern font */
+    height: auto;  /* Allow height to adjust based on content */
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;  /* Remove default list styling */
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;  /* Display the list items side by side */
+    margin: 0 15px;  /* Add space between links */
+}
+
+footer ul li a {
+    color: white;  /* White text for the links */
+    text-decoration: none;  /* Remove underline */
+    font-size: 1rem;  /* Set the link text size */
+    transition: color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+footer ul li a:hover {
+    color: #ff6347;  /* Change link color on hover */
+}
+
+@media (max-width: 768px) {
+    footer ul li {
+        display: block;  /* Stack the links vertically on smaller screens */
+        margin: 10px 0;  /* Add vertical space between links */
+    }
+}
+
+/* CV Experience Section */
+/* CV Experience Section */
+.cv-experience {
+    margin-top: 50px;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-experience h2 {
+    font-size: 2rem; /* Use rem for consistent font size across devices */
+    margin-bottom: 15px;
+    color: #e1f2ff; /* Deep Blue */
+}
+
+.cv-experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cv-experience li {
+    margin-bottom: 25px;
+}
+
+.cv-experience h3 {
+    font-size: 4vw; /* Smaller, responsive font size */
+    color: #a3789e; /* Vibrant Yellow */
+    margin-bottom: 5px;
+}
+
+.cv-experience p {
+    font-size: 1.5rem; /* More appropriate size for readability */
+    color: #555; /* Soft Gray for readability */
+}
+
+.cv-experience p strong {
+    font-weight: bold;
+    color: #e1f2ff; /* Deep Blue */
+}
+
+.curved-arrow {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    z-index: -1; /* Places the curved line behind the text */
+  }
+  
+  .curved-arrow::after {
+    content: '';
+    position: absolute;
+    top: 30px; /* Adjust as needed */
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid red;
+  }
+  
+
+  /*search desding */
+  .search__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+    padding-top: 0;
+    width: fit-content;
+   
+    margin: 5vw;
+}
+
+/* Title Styling */
+.search__title {
+    font-size: 20vw;  /* Slightly smaller font */
+    font-weight: 900;
+    text-align: center;
+    color: #ff8b88;
+    margin-bottom: 20px; /* Space between title and input */
+}
+
+/* Input field styling */
+.search__input {
+    width: 20vw;  /* Smaller width */
+    padding: 10px 18px;
+    background-color: transparent;
+    font-size: 14vw;
+    line-height: 18px;
+    color: #575756;
+    background-image: url("data:image/svg+xrml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 2vw;
+}
+
+/* Placeholder Styling */
+.search__input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Optional: Add hover effects for the input */
+.search__input:hover {
+    border-color: #ff8b88; /* Change border color when hovered */
+    transform: scale(1.05); /* Slightly enlarge when hovered */
+}
+
+/* Gradient text styling */
+.gradient-text {
+    background: linear-gradient(90deg, #ffffff, #f2545b, #ff8b88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Animation for gradient effect */
+.animated-gradient {
+    animation: gradient-flow 3s infinite;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* General settings for animated gradient */
+.gradient-text {
+    background-size: 200% 200%;
+    display: inline-block;
+}
+
+.transparent-button {
+    background-color: transparent; /* Make the background transparent */
+    color: black; /* Keep the text color black */
+    border: 2px solid rgba(0, 0, 0, 0.3); /* Subtle border with transparency */
+    padding: 10px 15px; /* Padding around the text */
+    font-size: 14vw; /* Font size for the text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: background-color 0.3s, border 0.3s; /* Smooth transition on hover */
+}
+
+.transparent-button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background color change on hover */
+    border: 2px solid rgba(0, 0, 0, 0.6); /* Darker border on hover */
+}
+
+  /* Cloud keyframes animation */
+  @keyframes clouds {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 120%;
+    }
+}
+
+/* Cloud container with gradient background */
+.cloud-container {
+    width: 100%;
+    height: 30vw; /* Ensures enough space for the clouds to animate */
+   
+    position: relative; /* Positioning context for clouds */
+    overflow: hidden;
+    display: flex; /* Makes it a flex container */
+    justify-content: center; /* Centers clouds horizontally */
+    align-items: center; /* Centers clouds vertically */
+    margin: 3vw;
+}
+
+
+/* Cloud styles */
+.cloud {
+    animation: clouds 60s infinite linear;
+    border-radius: 10px;
+    position: absolute; /* Positioning absolute to allow animation */
+    margin: 33px 0 0 0;
+    width: 54px;
+    height: 5px;
+    background: #f7e7eb;
+}
+
+.cloud.tiny {
+    transform: scale(0.5);
+}
+
+.cloud.small {
+    transform: scale(1);
+}
+
+.cloud.normal {
+    transform: scale(2);
+}
+
+.cloud.large {
+    transform: scale(4);
+}
+
+/* Cloud div circle styles */
+.cloud div {
+    box-shadow: inset -2px -3px 0 0 #f7e7eb;
+    position: absolute;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    left: -3px;
+    bottom: 0;
+    background: #fafbf0;
+    z-index: 10;
+}
+
+/* Positioning and scaling for subsequent circles */
+.cloud div:first-child + div {
+    transform: scale(1.6, 1.6);
+    margin: 0 0 4px 13px;
+    z-index: 9;
+}
+
+.cloud div:first-child + div + div {
+    transform: scale(2.4, 2.4);
+    margin: 0 0 9px 32px;
+    z-index: 8;
+}
+
+.cloud div:first-child + div + div + div {
+    transform: scale(1.3, 1.3);
+    margin: 0 0 2px 50px;
+    z-index: 7;
+}
+
+/* Cloud classes with different animation durations */
+.cloud-1 {
+    animation-duration: 30s;
+    margin-left: 20%;
+}
+
+.cloud-2 {
+    animation-duration: 15s;
+    margin-left: 90%;
+}
+
+.cloud-3 {
+    animation-duration: 20s;
+    margin-left: 50%;
+}
+
+.cloud-4 {
+    animation-duration: 25s;
+    margin-left: 43%;
+}
+
+.cloud-5 {
+    animation-duration: 30s;
+    margin-left: 83%;
+}
+
+.cloud-6 {
+    animation-duration: 20s;
+    margin-left: 73%;
+}
+
+.cloud-7 {
+    animation-duration: 20s;
+    margin-left: 69%;
+}
+
+.cloud-8 {
+    animation-duration: 20s;
+    margin-left: 100%;
+}
+
+.cloud-9 {
+    animation-duration: 15s;
+    margin-left: 10%;
+}
+
+.cloud-10 {
+    animation-duration: 20s;
+    margin-left: 14%;
+}
+
+.cloud-11 {
+    animation-duration: 15s;
+    margin-left: 73%;
+}
+
+.cloud-12 {
+    animation-duration: 12s;
+    margin-left: 51%;
+}
+
+
+
+
+
+
+.button-85 {
+    padding: 1vw 3vw;  /* Reduced padding based on viewport width */
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 0.8vw;  /* Slightly smaller border-radius */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 1.5vw;  /* Reduced font size */
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -0.1vw;
+    left: -0.1vw;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(0.5vw);  /* Reduced blur */
+    -webkit-filter: blur(0.5vw);
+    width: calc(100% + 0.1vw);
+    height: calc(100% + 0.1vw);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 0.8vw;  /* Slightly smaller border-radius */
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 0.8vw;  /* Slightly smaller border-radius */
+}
+
+
+
+
+
+
+
+
+
+.illustration-editor {
+    margin-top: -2rem;
+    margin-right: -10rem;
+    display: grid;
+    grid-template-rows: 24px auto;
+    justify-items: center;
+    position: relative;
+    height: fit-content;
+  }
+  
+
+
+  .code {
+    position: absolute;
+    width: 290px;
+    height: 145px;
+    background: #1d1e22;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    z-index: 5;
+  }
+  .code header {
+    display: grid;
+    grid-template-columns: 36px auto 36px;
+    align-items: center;
+  }
+  .code header svg {
+    margin: 10px;
+  }
+  .code header h1 {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1.57px;
+    color: #c5c8d4;
+    margin: 0;
+  }
+  .code-html {
+    left: -100px;
+    top: 40px;
+  }
+  .code-css {
+    left: -25px;
+    top: 200px;
+  }
+  .code-js {
+    left: -175px;
+    top: 360px;
+  }
+  .code .code-content {
+    margin: 0 10px 10px;
+    color: white;
+  }
+  .code .code-content .c-r {
+    color: #a88038;
+  }
+  .code .code-content .c-o {
+    color: #de7300;
+  }
+  .code .code-content .c-y {
+    color: #e1ca72;
+  }
+  .code .code-content .c-g {
+    color: #74b087;
+  }
+  .code .code-content .c-p {
+    color: #9f8198;
+  }
+  .code .code-content .c-b {
+    color: #7a99ad;
+  }
+  .code .code-content .c-c {
+    color: #666666;
+  }
+  .code-css .code-content code .line-1 {
+    width: 0%;
+    margin: 0;
+    border-right: 0.15em solid transparent;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .code-css .code-content code .line-2 {
+    width: 0%;
+    margin: 0;
+    border-right: 0.15em solid transparent;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .code-css .code-content code .line-3 {
+    width: 0%;
+    margin: 0;
+    border-right: 0.15em solid transparent;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .code-css .code-content code .line-4 {
+    width: 0%;
+    margin: 0;
+    border-right: 0.15em solid transparent;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .code-css .code-content code .line-5 {
+    width: 0%;
+    margin: 0;
+    border-right: 0.15em solid transparent;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .code-css .code-content code .line-1 {
+    animation: typing-1 3s 0s steps(30, end) forwards, cursor 1s linear 0s 3;
+  }
+  .code-css .code-content code .line-2 {
+    animation: typing-2 3s 3s steps(30, end) forwards, cursor 1s linear 3s 3;
+  }
+  .code-css .code-content code .line-3 {
+    animation: typing-3 3s 6s steps(30, end) forwards, cursor 1s linear 6s 3;
+  }
+  .code-css .code-content code .line-4 {
+    animation: typing-4 3s 9s steps(30, end) forwards, cursor 1s linear 9s 3;
+  }
+  .code-css .code-content code .line-1, .code-css .code-content code .line-3, .code-css .code-content code .line-4 {
+    animation-duration: 1s;
+    animation-timing-function: steps(10, end);
+  }
+  .code-css .code-content code .line-5 {
+    border-color: transparent;
+    animation: typing-5 3s 12s steps(30, end) forwards, cursor-persist 1s linear 12s infinite;
+  }
+  .code-css .code-content code .line-2 {
+    margin-left: 2rem;
+  }
+  .code-css .code-content code .line-3, .code-css .code-content code .line-4, .code-css .code-content code .line-5 {
+    margin-left: 4rem;
+  }
+  
+  .editor-block {
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 421px;
+    background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%);
+    border-radius: 10px;
+  }
+  
+  @keyframes typing-1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60px;
+    }
+  }
+  @keyframes typing-2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 220px;
+    }
+  }
+  @keyframes typing-3 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70px;
+    }
+  }
+  @keyframes typing-4 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 75px;
+    }
+  }
+  @keyframes typing-5 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 141px;
+    }
+  }
+  @keyframes cursor {
+    from, to, 20%, 80% {
+      border-color: transparent;
+    }
+    25%, 75% {
+      border-color: white;
+    }
+  }
+  @keyframes cursor-persist {
+    from, 45% {
+      border-color: transparent;
+    }
+    50%, to {
+      border-color: white;
+    }
+  }
+
+
+  .bigger {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+
+  /* Mobile Devices (up to 768px width) */
+@media (max-width: 768px) {
+    .code {
+      width: 100vw; /* Adjust width to fit smaller screens */
+      height: auto; /* Allow dynamic height based on content */
+      border-radius: 2vw;
+    }
+  
+    .code header h1 {
+      font-size: 12px; /* Reduce font size for smaller screens */
+      letter-spacing: 1px;
+    }
+  
+    .code-html,
+    .code-css,
+    .code-js {
+      left: -50px; /* Adjust positions for better alignment */
+      top: 20px; /* Adjust vertical spacing */
+    }
+  
+    .editor-block {
+      width: 300px; /* Reduce size for smaller screens */
+      height: auto;
+    }
+  
+    .bigger {
+      flex-direction: column; /* Stack items vertically */
+    }
+  }
+  
+  /* Tablets (769px to 1024px width) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .code {
+      width: 80vw;
+      height: 40vw;
+      border-radius: 1.5vw;
+    }
+  
+    .code header h1 {
+      font-size: 13px;
+      letter-spacing: 1.2px;
+    }
+  
+    .code-html,
+    .code-css,
+    .code-js {
+      left: -75px;
+      top: 50px;
+    }
+  
+    .editor-block {
+      width: 400px;
+      height: auto;
+    }
+  }
+  
+
+
+
+
+  h1{
+    color: white;
+}
+
+/* Styling for the loading h1 */
+.loading-screen h1 {
+    color: #484848;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Brown Sugar';
+    letter-spacing: 7px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.loading-screen h1 span {
+    transition: .5s linear;
+}
+
+.loading-screen h1:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+
+.loading-screen h1:hover span:nth-child(1):after {
+    content: "'";
+}
+
+.loading-screen h1:hover span:nth-child(2) {
+    margin-left: 30px;
+}
+
+.loading-screen h1:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+/* Loading screen animation */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+/* Real website content will be initially hidden */
+.real-website {
+    display: none;
+    transition: display 0.5s;
+}
+
+/* Hide the loading screen after mouse hover and 2 seconds delay */
+.loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Optional: animation to fade the content in */
+.real-website.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+/* Global adjustments for font sizes and layouts */
+@media (max-width: 1200px) {
+    .loading-screen{
+        font-size: 1vw;
+    }
+    .page1 h1 {
+        font-size: 6vw;
+    }
+    .page1 h2 {
+        font-size: 2.5vw;
+    }
+    .page2 h1 {
+        font-size: 5vw;
+    }
+    .page2-left h2 {
+        font-size: 3.5vw;
+    }
+    .page3 h1 {
+        font-size: 5vw;
+    }
+    .page5 h2 {
+        font-size: 3.5vw;
+    }
+    .search__title {
+        font-size: 15vw;
+    }
+    .search__input {
+        width: 40vw;
+        font-size: 10vw;
+    }
+}
+
+/* Adjustments for medium screens (tablets) */
+@media (max-width: 768px) {
+    .loading-screen{
+        font-size: 1vw;
+    }
+    .page1 h1 {
+        font-size: 9vw;
+    }
+    .page2-container {
+        flex-direction: column;
+    }
+    .page2-left, .page2-right {
+        width: 100%;
+    }
+    .page2-left h2 {
+        font-size: 5vw;
+    }
+    .page2-right p {
+        font-size: 3.5vw;
+    }
+    .page2-right button {
+        font-size: 3vw;
+    }
+    .page3 h1 {
+        font-size: 7vw;
+    }
+    .page3-part1 img, .page3-part1 video {
+        height: 300px;
+    }
+    .page4 {
+        padding: 140px 20px;
+    }
+    .box {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .search__input {
+        width: 70vw;
+    }
+}
+
+/* Adjustments for small screens (phones) */
+@media (max-width: 480px) {
+    .loading-screen{
+        font-size: 1vw;
+    }
+    .page1 h1 {
+        font-size: 10vw;
+    }
+    .page2 h1 {
+        font-size: 6vw;
+    }
+    .page2-left h2 {
+        font-size: 6vw;
+    }
+    .page2-right p {
+        font-size: 4vw;
+    }
+    .page2-right button {
+        font-size: 4vw;
+    }
+    .page3 h1 {
+        font-size: 8vw;
+    }
+    .page5 h2 {
+        font-size: 5vw;
+    }
+    .search__input {
+        width: 80vw;
+        font-size: 12vw;
+    }
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Make sure the cursor follows well on smaller screens */
+.cursor {
+    height: 100px;
+    width: 140px;
+}
+
+/* Adjusting the size of images and other media elements */
+.page3-part1 img, .page3-part1 video {
+    height: 250px;
+}
+
+.elem img {
+    width: 40vw;
+    height: 40vw;
+}
+
+  
